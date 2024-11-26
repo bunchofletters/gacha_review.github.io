@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: #575757;
+    background-color:  #222222;
+    color: #EFEFED;
 }
 .center{
     margin: auto;
@@ -28,10 +29,11 @@ body{
     font-size: 15px;
   }
   .content {
-    padding: 0 18px;
+    padding: 18px;
     display: none;
     overflow: hidden;
-    background-color: #8b8b8b;
+    background-color: #222222;
+    color: #EFEFED
   }
   .active, .collapsible:hover {
     background-color: #46474a;
@@ -44,4 +46,13 @@ body{
   #game_link{
     font-size: 20px;
     text-align: center;
+  }
+  .return{
+    margin-right: 1000px;
+    background-color: #717171;
+    border: 1px solid #121212;
+  }
+  .synop{
+    color: #EFEFED;
+    font-size: 19px;
   }
