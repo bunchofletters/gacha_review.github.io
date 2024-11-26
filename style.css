@@ -5,8 +5,9 @@ body{
 }
 .center{
     margin: auto;
-    width: 100%;
+    width: 96%;
     border: solid 2px black; 
+    /* border: solid 2px white;  */
     padding: 10px;
     text-align: center;
 }
@@ -33,7 +34,8 @@ body{
     display: none;
     overflow: hidden;
     background-color: #222222;
-    color: #EFEFED
+    color: #EFEFED;
+    border: 2px solid black;
   }
   .active, .collapsible:hover {
     background-color: #46474a;
@@ -47,12 +49,25 @@ body{
     font-size: 20px;
     text-align: center;
   }
-  .return{
-    margin-right: 1000px;
-    background-color: #717171;
-    border: 1px solid #121212;
-  }
   .synop{
     color: #EFEFED;
     font-size: 19px;
+  }
+  .container{
+    position: relative; /* Establishes a reference point for absolute positioning */
+    width: 95vw;
+    height: 100vw;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    padding: 10px;
+    /* overflow: hidden; */
+  }
+  .fixed-button {
+    position: absolute; /* Fixes the button inside the container */
+    top: 20px;  /* Button's distance from the bottom */
+    left: 20px;   /* Button's distance from the right */
+    padding: 10px 20px;
+    background-color: #717171;
+    border: none;
+    cursor: pointer;
   }
