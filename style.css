@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #575757;
+}
+.center{
+    margin: auto;
+    width: 100%;
+    border: solid 2px black; 
+    padding: 10px;
+    text-align: center;
+}
+#HeavenBurnsRed{
+    padding: 10px;
+}
+.but{
+    background-color: #717171;
+    border: 1px solid #121212;
+}
+.collapsible {
+    background-color: #717171;
+    color: #121212;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #8b8b8b;
+  }
+  .active, .collapsible:hover {
+    background-color: #46474a;
+  }
+  .space-pad{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #game_link{
+    font-size: 20px;
+    text-align: center;
+  }
