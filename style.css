@@ -2,10 +2,11 @@ body{
     margin: 0;
     background-color:  #222222;
     color: #EFEFED;
+    overflow-x: hidden;
 }
 .center{
     margin: auto;
-    width: 96%;
+    width: 90vw;
     border: solid 2px black; 
     /* border: solid 2px white;  */
     padding: 10px;
@@ -56,18 +57,27 @@ body{
   .container{
     position: relative; /* Establishes a reference point for absolute positioning */
     width: 95vw;
-    height: 100vw;
-    overflow: hidden;
+    height: 100vh;
     /* margin: 0 auto; */
     padding: 10px;
     /* overflow: hidden; */
   }
   .fixed-button {
-    position: absolute; /* Fixes the button inside the container */
-    top: 20px;  /* Button's distance from the bottom */
-    left: 20px;   /* Button's distance from the right */
+    position: absolute; /* Fixes the button 
+    inside the container */
+    height: 1vh;
+    width: 1vw;
+    /* change button position */
+    top: 20px;
+    left: 20px; 
+    /* change button position end */
     padding: 10px 20px;
     background-color: #717171;
     border: none;
     cursor: pointer;
+    /* recentering the text on the button*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* recentering the text on the button end*/
   }
