@@ -12,9 +12,6 @@ body{
     padding: 10px;
     text-align: center;
 }
-#HeavenBurnsRed{
-    padding: 10px;
-}
 .but{
     background-color: #717171;
     border: 1px solid #121212;
@@ -29,55 +26,67 @@ body{
     text-align: center;
     outline: none;
     font-size: 15px;
-  }
-  .content {
-    padding: 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #222222;
-    color: #EFEFED;
-    border: 2px solid black;
-  }
-  .active, .collapsible:hover {
-    background-color: #46474a;
-  }
-  .space-pad{
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #game_link{
-    font-size: 20px;
-    text-align: center;
-  }
-  .synop{
-    color: #EFEFED;
-    font-size: 19px;
-  }
-  .container{
-    position: relative; /* Establishes a reference point for absolute positioning */
-    width: 95vw;
-    height: 100vh;
-    /* margin: 0 auto; */
-    padding: 10px;
-    /* overflow: hidden; */
-  }
-  .fixed-button {
-    position: absolute; /* Fixes the button 
-    inside the container */
-    height: 1vh;
-    width: 1vw;
-    /* change button position */
-    top: 20px;
-    left: 20px; 
-    /* change button position end */
-    padding: 10px 20px;
-    background-color: #717171;
-    border: none;
-    cursor: pointer;
-    /* recentering the text on the button*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* recentering the text on the button end*/
-  }
+}
+.content {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #222222;
+  color: #EFEFED;
+  border: 2px solid black;
+}
+.active, .collapsible:hover {
+  background-color: #46474a;
+}
+.space-pad{
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: solid black;
+  border-bottom: solid black;
+}
+#game_link{
+  font-size: 20px;
+  text-align: center;
+}
+.synop{
+  color: #EFEFED;
+  font-size: 19px;
+}
+.container{
+  position: relative; /* Establishes a reference point for absolute positioning */
+  width: 95vw;
+  height: 100vh;
+  /* margin: 0 auto; */
+  padding: 10px;
+  /* overflow: hidden; */
+}
+.fixed-button {
+  position: absolute; /* Fixes the button 
+  inside the container */
+  height: 1vh;
+  width: 1vw;
+  /* change button position */
+  top: 20px;
+  left: 20px; 
+  /* change button position end */
+  padding: 10px 20px;
+  background-color: #717171;
+  border: none;
+  cursor: pointer;
+  /* recentering the text on the button*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* recentering the text on the button end*/
+}
+.toc{
+  margin-top: 5px;
+  border: 2px solid black;
+  width: fit-content;
+  padding-right: 10px;
+}
+.toccontent{
+  text-decoration: none;
+  color:white;
+}
