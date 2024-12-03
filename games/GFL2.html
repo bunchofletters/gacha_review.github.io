@@ -18,19 +18,27 @@
         <!-- this is the table of content -->
         <div class = "toc">
             <ol>
-                <a href = "#gameDownload" class = "toccontent"><li>
+                <a href = "#gameDownload"><li>
                     Game Download
                 </li></a>
-                <a href = "#story" class = toccontent><li>
+                <a href = "#story"><li>
                     Story
                 </li></a>
-                <a href = "#gameplay" class = toccontent><li>
+                <a href = "#gameplay"><li>
                     Gameplay
+                    <ol>
+                        <li>
+                            <a href = "#deployment">Combat Deployment</a>
+                        </li>
+                        <li>
+                            <a href = "#gpcombat">Combat</a>
+                        </li>
+                    </ol>
                 </li></a>
-                <a href = "#endgame" class = toccontent><li>
+                <a href = "#endgame"><li>
                     End Game Content
                 </li></a>
-                <a href = "#CO" class = toccontent><li>
+                <a href = "#CO"><li>
                     Currency Overview
                 </li></a>
             </ol>
@@ -63,7 +71,69 @@
             <!-- Start of gameplay -->
             <h2 id ="gameplay">Gameplay</h2>
             <div class = "space-pad">
-                Gameplay blah blah
+                <!-- comabt deployment -->
+                <h2 id = "deployment">Combat Deployment</h2>
+                <div class = "f5050">
+                    <div class ="left">
+                        <img src = "../img/gfl2/Deployment1.png" style = "width: 100%;">
+                    </div>
+                    <div class="right">
+                        <ol class="colored-list">
+                            <li> T-Doll Deployment Area </li>
+                            <li> T-Doll Selection Area </li>
+                            <li> T-Doll Information Area </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class = "f5050">
+                    <div class = "left">
+                        <img src=  "../img/gfl2/Deployment2.png" style = "width: 100%;">
+                    </div>
+                    <div class ="right">
+                        After clicking on <span style = "color: yellow"> 3</span> you'll get the T-Doll infomation 
+                    </div>
+                </div>
+                <!-- end of combat deployment -->
+                <!-- start of combat action-->
+                <h2 id = "gpcombat"> Combat</h2>
+                <div class = "f5050">
+                    <div class = "left">
+                        <img src = "../img/gfl2/Combat1.png" style = "width: 100%;">
+                    </div>
+                    <div class = "right">
+                        <ol class = "colored-list">
+                            <li>Location T-Doll are able to move to</li>
+                            <li>T-Dolls Skills</li>
+                            <li>T-Doll Passive</li>
+                            <li>Combat Interface (From Left to Right)</li>
+                            <ol>
+                                <li>Rewind: Go Back to an Earlier Action</li>
+                                <li>Auto</li>
+                                <li>Combat Speed: {1x, 2x, 3x}</li>
+                                <li>Pass Turn</li>
+                            </ol>
+                        </ol>
+                    </div>
+                </div>
+                <h2 style = "text-align: center;">Skill Type</h2>
+                <div class="slideshow">
+                    <div class = "slide">
+                        <img src = "../img/gfl2/CombatST.PNG" style = "width:100%">
+                        <div class="Scaption">Single Target</div>
+                    </div>
+                    <div class = "slide">
+                        <img src="../img/gfl2/CombatAoE.PNG" style = "width: 100%">
+                        <div class="Scaption">AoE</div>
+                    </div>
+
+                    <a class="prev" onclick = "plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div><br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                    <!-- end of combat action -->
             </div>
             <!-- start of end game content -->
             <h2 id = "endgame">End Game Content</h2>
@@ -81,5 +151,5 @@
             <!-- end of currency overview -->
         </div>
     </div>
-    <script src = "../collape.js"></script>
+    <script src = "../ascripts.js"></script>
 </html>
