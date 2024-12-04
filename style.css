@@ -102,34 +102,6 @@ body{
 .left{
   flex:1;
 }
-/* Targeting the ordered list numbers */
-.colored-list {
-  list-style-position: inside;
-}
-
-.colored-list li {
-  position: relative;
-}
-
-.colored-list li::before {
-  content: counter(item) ". "; /* Display the counter value with a period */
-  counter-increment: item;
-  position: absolute;
-  left: 0;
-  color: yellow; /* Change the number color here */
-}
-
-.colored-list {
-  counter-reset: item; /* Initialize the counter */
-}
-
-.colored-list ol li::before {
-  content: counter(item) ". "; /* Show number in nested <ol> */
-  counter-increment: item;
-  color: initial; /* Use default color for nested <ol> numbers */
-  position: relative;
-  left: 0;
-}
 
 * {box-sizing:border-box}
 
