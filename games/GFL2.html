@@ -18,29 +18,25 @@
         <!-- this is the table of content -->
         <div class = "toc">
             <ol>
-                <a href = "#gameDownload"><li>
-                    Game Download
-                </li></a>
-                <a href = "#story"><li>
-                    Story
-                </li></a>
-                <a href = "#gameplay"><li>
-                    Gameplay
+                <a href = "#gameDownload"><li>Game Download</li></a>
+                <a href = "#story"><li>Story</li></a>
+                <ol>
+                    <li><a href = "#DPS">Double Pendulum Simulation</a></li>
+                    <li><a href = "#SS">Second Signal</a></li>
+                    <li><a href = "#LR">Lacuna Rectification</a></li>
+                    <li><a href = "#RM">Reverse Matrix</a></li>
+                    <li><a href = "#HR">Heterodyne Resonance</a></li>
+                    <li><a href = "#HC">Harmonic Cycle</a></li>
+                </ol>
+                <a href = "#menu"><li>Game Menu</li></a>
+                <a href = "#gameplay"><li>Gameplay
                     <ol>
-                        <li>
-                            <a href = "#deployment">Combat Deployment</a>
-                        </li>
-                        <li>
-                            <a href = "#gpcombat">Combat</a>
-                        </li>
+                        <li><a href = "#deployment">Combat Deployment</a></li>
+                        <li><a href = "#gpcombat">Combat</a></li>
                     </ol>
                 </li></a>
-                <a href = "#endgame"><li>
-                    End Game Content
-                </li></a>
-                <a href = "#CO"><li>
-                    Currency Overview
-                </li></a>
+                <a href = "#endgame"><li>End Game Content</li></a>
+                <a href = "#CO"><li>Currency Overview</li></a>
             </ol>
         </div>
         <!-- table of content end -->
@@ -65,9 +61,78 @@
              <!-- start of game story section -->
             <h2 id ="story">Story</h2>
             <div class = "space-pad">
-                Chapter1 adfqwefasdf
+                <div class = "botbord">
+                    <h2 id = "DPS">01: Double Pendulum Simulation</h2>
+                        <p>
+                            blash
+                        </p>
+                </div>
+                <div class = "botbord">
+                    <h2 id = "SS">02: Second Signal</h2>
+                        <p>
+                            blash
+                        </p>
+                </div>
+                <div class ="botbord">
+                    <h2 id = "LR">03: Lacuna Rectification</h2>
+                        <p>
+                            blash
+                        </p>
+                </div>
+                <div class = "botbord">
+                    <h2 id = "RM">04: Reverse Matrix</h2>
+                        <p>
+                            blash
+                        </p>
+                </div>
+                <div class ="botbord">
+                    <h2 id = "HR">05: Heterodyne Resonance</h2>
+                        <p>
+                            blash
+                        </p>
+                </div>
+                <h2 id = "HC">06: Harmonic Cycle</h2>
+                    <p>
+                        blash
+                    </p>
             </div>
             <!-- end of game story section -->
+            <!-- Start of game menu -->
+            <h2 id = "menu">Menu</h2>
+            <div class = "space-pad">
+                <h2>Home</h2>
+                    <img src = "../img/gfl2/Menu.webp" style = "width:100%;" usemap = "#menuclick" id="menuimage">
+                    <map name = "menuclick">
+                        <area shape ="rect" coords = "164,64,460,290" href = "#CRE">
+                        <area shape = "rect" coords = "170,759,275,815" href = "#P/S">
+                        <area shape = "rect" coords = "292,766,378,807" href = "#BD">
+                        <area shape = "rect" coords = "404,757,480,800" href = "#FM">
+                        <area shape = "rect" coords = "1136,770,1232,853" href = "#Battlepass_">
+                        <area shape = "rect" coords = "1243,771,1345,852" href = "#AllE">
+                        <area shape = "rect" coords = "1345,773,1461,850" href = "#DLM">
+                        <area shape = "rect" coords = "1393,79,1784,158" href = "#MainS">
+                        <area shape = "rect" coords = "1385,190,1774,267" href = "#LimitedE">
+                        <area shape = "rect" coords = "1492,294,1776,363" href = "#TDWE">
+                        <area shape = "rect" coords = "1562,393,1773,449" href = "#DDWG">
+                        <area shape = "rect" coords = "1552,485,1765,538" href = "#Gacha">
+                        <area shape = "rect" coords = "1652,578,1769,633" href = "#MPS">
+                        <area shape = "rect" coords = "382,544,572,677" href = "#StAM">
+                    </map>
+                    <h2 id = "CRE">Currently Running Event</h2>
+                    <h2 id = "P/S">Profile/Setting</h2>
+                    <h2 id = "BD">Background Display</h2>
+                    <h2 id = "FM">Background Display</h2>
+                    <h2 id = "Battlepass_">Battlepass</h2>
+                    <h2 id = "AllE">All Events (Limited + Login + etc)</h2>
+                    <h2 id = "DLM">Daily Login Mission</h2>
+                    <h2 id = "MainS">Main Story</h2>
+                    <h2 id = "LimitedE">Limited Event</h2>
+                    <h2 id = "TDWE">T-Doll/ Weapon Enchantment</h2>
+                    <h2 id = "DDWG">Dormitory/ Dispatch/ Weapon Gallery</h2>
+                    <h2 id = "Gacha">Gacha</h2>
+                    <h2 id = "MPS">Multi-Purpose Shop (Most Item Requires Money)</h2>
+                    <h2 id = "StAM">Shortcut to All Menus</h2>
+            <!-- end of game menu -->
             <!-- Start of gameplay -->
             <h2 id ="gameplay">Gameplay</h2>
             <div class = "space-pad">
@@ -140,12 +205,31 @@
             <!-- start of currency overview -->
             <h2 id = "CO"> Currency Overview</h2>
             <div class = "space-pad">
-                preimum currency
-                blah 
-                blah
+                24k for guarentee T-Doll
             </div>
             <!-- end of currency overview -->
         </div>
     </div>
     <script src = "../ascripts.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var image = document.getElementById('menuimage');
+            var imageWidth = image.width;
+            var imageHeight = image.height;
+
+            var scalex = imageWidth/image.naturalWidth;
+            var scaley = imageHeight/image.naturalHeight;
+
+            var areas = document.querySelectorAll('map[name="menuclick"] area');
+
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+        });
+    </script>
 </html>

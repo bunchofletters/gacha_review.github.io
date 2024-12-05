@@ -157,4 +157,7 @@ body{
 .active, .dot:hover {
   background-color: #717171;
 }
+.botbord{
+  border-bottom: 2px solid black ;
+}
 
