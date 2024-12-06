@@ -28,7 +28,11 @@
                     <li><a href = "#HR">Heterodyne Resonance</a></li>
                     <li><a href = "#HC">Harmonic Cycle</a></li>
                 </ol>
-                <a href = "#menu"><li>Game Menu</li></a>
+                <a href = "#menu"><li>Game Menu
+                    <ol>
+                        <li><a href = "#homem">Home</a></li>
+                    </ol>
+                </li></a>
                 <a href = "#gameplay"><li>Gameplay
                     <ol>
                         <li><a href = "#deployment">Combat Deployment</a></li>
@@ -36,7 +40,17 @@
                     </ol>
                 </li></a>
                 <a href = "#endgame"><li>End Game Content</li></a>
-                <a href = "#CO"><li>Currency Overview</li></a>
+                <a href = "#gachA"><li>Gacha Overview
+                    <ol>
+                        <li><a href="#gachaTicket">Gacha Tickets</a></li>
+                        <li><a href="#gachaBanner">Gacha Banner</a></li>
+                    </ol>
+                </li></a>
+                <a href = "#CO"><li>Currency Overview
+                    <ol>
+                        <li><a href = "#premCur">Preminum Currency</a></li>
+                    </ol>
+                </li></a>
             </ol>
         </div>
         <!-- table of content end -->
@@ -100,7 +114,7 @@
             <!-- Start of game menu -->
             <h2 id = "menu">Menu</h2>
             <div class = "space-pad">
-                <h2>Home</h2>
+                <h2 id = "homem">Home</h2>
                     <img src = "../img/gfl2/Menu.webp" style = "width:100%;" usemap = "#menuclick" id="menuimage">
                     <map name = "menuclick">
                         <area shape ="rect" coords = "164,64,460,290" href = "#CRE">
@@ -202,10 +216,39 @@
                 mode etc
             </div>
             <!-- end of end game content -->
+             <!-- Start of gacha overview -->
+            <h2 id = "gachA"> Gacha Overview</h2>
+            <div class= "space-pad">
+                <h2 id = "gachaTicket">Gacha Tickets</h2>
+                <div class ="botbord" style = "text-align: center;">
+                    <img src = "../img/gfl2/StandPull.PNG" style = "width: 100%">
+                    <p><b>
+                        Currency for Standard Gacha Banner
+                    </b></p>
+                    <img src = "../img/gfl2/PremPull.PNG" style = "width:100%">
+                    <p><b>
+                        Currency for Preimun Gacha Banner (Limited Time Banner) 
+                    </b></p>
+                </div>
+                <h2 id = "gachaBanner">Gacha Banner</h2>
+                <div class = "botbord">
+                    <h2>Elite T-Doll Rate</h2>
+                        <img src = "../img/gfl2/Elite-Tdollrate.PNG" style = "width:100%">
+                        <p style ="text-align: center;"><span><b>24k Collapse Piece</b></span> or <span><b>160 Pulls</b></span> for Guarentee Feature T-Doll </p>
+                    <h2>Elite Weapon Rate</h2>
+                        <img src = "../img/gfl2/EliteWeaponrate.PNG" style = "width:100%">
+                        <p style = "text-align:center">
+                            <span><b>21k Collapse Piece</b></span> or <span><b>140 Pulls</b></span> for Guarentee Feature Weapon
+                        </p>
+                </div>    
+            </div>
             <!-- start of currency overview -->
             <h2 id = "CO"> Currency Overview</h2>
             <div class = "space-pad">
-                24k for guarentee T-Doll
+                <h2 id = "premCur">Preimun Currency</h2>
+                <div class = "botbord">
+                    <img src = "../img/gfl2/cube.PNG" style = "width:100%">
+                </div>
             </div>
             <!-- end of currency overview -->
         </div>
