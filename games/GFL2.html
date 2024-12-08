@@ -30,7 +30,36 @@
                 </ol>
                 <a href = "#menu"><li>Game Menu
                     <ol>
-                        <li><a href = "#homem">Home</a></li>
+                        <li><a href = "#MainS">Home</a></li>
+                        <ol>
+                            <li><a href = "#camp">Campaign</a></li>
+                            <li><a href="#supmis">Supply Mission</a>
+                        </ol>
+                        <li><a href = "#TDWE">T-Doll and Weapon Overview/Enchantment
+                            <ol>
+                                <li><a href="#TOVERVIEW">T-Doll Overview</a></li>
+                            </ol>
+                        </a></li>
+                        <li><a href = "#DDWG">Refitting Room
+                            <ol>
+                                <li><a href="#REFITMAIN">Main</a></li>
+                            </ol>
+                        </a></li>
+                        <li><a href = "#Gacha">Gacha
+                            <ol>
+                                <li><a href = "#DOLLG">T-Doll Gacha</a></li>
+                                <li><a href="#WEAPONG">Weapon Gacha</a></li>
+                            </ol>
+                        </a></li>
+                        <li><a href = "#MPS">Shop
+                            <ol>
+                                <li><a href = "#TSKIN">T-Doll Alt Skin</a></li>
+                                <li><a href="#WSKIN">Weapon Skin</a></li>
+                                <li><a href = "#SHOPBUNDLE">Shop Bundle</a></li>
+                                <li><a href ="#MONTHPASS">Monthly Pass</a></li>
+                                <li><a href="#PAIDCUR">Paid Currency</a></li>
+                            </ol>
+                        </a></li>
                     </ol>
                 </li></a>
                 <a href = "#gameplay"><li>Gameplay
@@ -114,7 +143,7 @@
             <!-- Start of game menu -->
             <h2 id = "menu">Menu</h2>
             <div class = "space-pad">
-                <h2 id = "homem">Home</h2>
+                <h2>Home</h2>
                     <img src = "../img/gfl2/Menu.webp" style = "width:100%;" usemap = "#menuclick" id="menuimage">
                     <map name = "menuclick">
                         <area shape ="rect" coords = "164,64,460,290" href = "#CRE">
@@ -139,12 +168,62 @@
                     <h2 id = "Battlepass_">Battlepass</h2>
                     <h2 id = "AllE">All Events (Limited + Login + etc)</h2>
                     <h2 id = "DLM">Daily Login Mission</h2>
-                    <h2 id = "MainS">Main Story</h2>
+                    <div class = "botbord">
+                        <h2 id = "MainS">Main</h2>
+                            <h3 id="camp">Campaign</h3>
+                            <img src = "../img/gfl2/Main Story.PNG" style = "width:100%">
+                        <h3 id ="supmis">Supply Mission</h3>
+                        <img src = "../img/gfl2/MaterialLv.PNG" style = "width:100%">
+                        <p style="text-align:center">Here You'll be able to Farm<ol>
+                            <li>Combat Report (T-Doll Lv Up Material)</li>
+                            <li>Analysis Blueprint (Weapon Lv Up Material)</li>
+                            <li>
+                                Stock Bar (T-Doll Neural Helix Upgrade Material)(Grant T-Doll Bonus Stats and Passive Abilities)
+                            </li>
+                            <li>
+                                Attachment (Attach to Weapon for Extra Stat)(End Game Grind)
+                            </li>
+                            <li>
+                                Sardis Gold (Weapon Attachment Enchantment Currency)
+                            </li>
+                        </ol></p>
+                    </div>
                     <h2 id = "LimitedE">Limited Event</h2>
-                    <h2 id = "TDWE">T-Doll/ Weapon Enchantment</h2>
-                    <h2 id = "DDWG">Dormitory/ Dispatch/ Weapon Gallery</h2>
-                    <h2 id = "Gacha">Gacha</h2>
-                    <h2 id = "MPS">Multi-Purpose Shop (Most Item Requires Money)</h2>
+                    <div class= "botbord">
+                        <h2 id = "TDWE">T-Doll/ Weapon Overview/ Enchantment</h2>
+                        <h3 id ="TOVERVIEW">T-Doll Overview</h3>
+                        <img src = "../img/gfl2/RefittingRoom.PNG" style = "width:100%">
+                    </div>
+                    <div class = "botbord">
+                        <h2 id = "DDWG">Dormitory/ Dispatch/ Weapon Gallery</h2>
+                        <h3 id ="REFITMAIN">Main</h3>
+                        <img src = "../img/gfl2/Public Area.PNG" style = "width:100%">
+                    </div>
+                    <div class = "botbord">
+                        <h2 id = "Gacha">Gacha</h2>
+                        <h3 id = "DOLLG">T-Doll Gacha</h3>
+                        <img src = "../img/gfl2/DollG.PNG" style = "width:100%">
+                        <p style = "text-align:center">T-Doll Does not get Added to the General Pool after the Banner Ends</p>
+                        <h3 id = "WEAPONG">Weapon Gacha</h3>
+                        <img src = "../img/gfl2/WeaponG.PNG" style = "width:100%">
+                        <p style = "text-align:center">Weapon Does not get Added to the General Pool after the Banner Ends</p>
+                    </div>
+                    <div class = "botbord">
+                        <h2 id = "MPS">Multi-Purpose Shop (Most Item Requires Money)</h2>
+                        <h3 id = "TSKIN">T-Doll Alt Skin</h3>
+                        <img src = "../img/gfl2/ShopSKin.PNG" style = "width:100%">
+                        <h3 id = "WSKIN">Weapon Skin</h3>
+                        <img src = "../img/gfl2/ShopWeaponSkin.PNG" style = "width:100%">
+                        <h3 id ="SHOPBUNDLE">Shop Bundle</h3>
+                        <img src = "../img/gfl2/ShopBundle.PNG" style = "width:100%">
+                        <p style = "text-align: center">Check this Shop Everyday, You get One Free Package in the Standard Package Tab Per Day.</p>
+                        <p style = "text-align: center">If You do Not Claim it, You'll Lose the One for That Day</p>
+                        <h3 id ="MONTHPASS">Monthly Pass</h3>
+                        <img src = "../img/gfl2/ShopMontlyPass.PNG" style = "width:100%">
+                        <h3 id = "PAIDCUR">Paid Currency</h3>
+                        <img src = "../img/gfl2/ShopVCurrency.PNG" style = "width:100%">
+                        <p style = "text-align:center">There is a First Purchase Bonus where You'll Get Twice the Normal Amount</p>
+                    </div>
                     <h2 id = "StAM">Shortcut to All Menus</h2>
             <!-- end of game menu -->
             <!-- Start of gameplay -->
