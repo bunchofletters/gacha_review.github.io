@@ -46,3 +46,10 @@ function showSlides(n){
   slides[slideindex-1].style.display = "block";
   dots[slideindex-1].className += " active";
 }
+
+function switchImage(imgsrc, imgmap){
+  var img = document.getElementById("homedis")
+
+  img.src = imgsrc;
+  img.useMap = imgmap;
+}

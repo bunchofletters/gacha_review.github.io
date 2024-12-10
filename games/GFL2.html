@@ -40,9 +40,12 @@
                                 <li><a href="#TOVERVIEW">T-Doll Overview</a></li>
                             </ol>
                         </a></li>
-                        <li><a href = "#DDWG">Refitting Room
+                        <li><a href = "#DDWG">Public Area
                             <ol>
                                 <li><a href="#REFITMAIN">Main</a></li>
+                                <li><a href="#DORM">Dormitory</a></li>
+                                <li><a href="#DISPATCH">Dispatch Room</a></li>
+                                <li><a href="#WEAPONGALL">Weapon Gallary</a></li>
                             </ol>
                         </a></li>
                         <li><a href = "#Gacha">Gacha
@@ -144,6 +147,7 @@
             <h2 id = "menu">Menu</h2>
             <div class = "space-pad">
                 <h2>Home</h2>
+                    <p style ="text-align: center; font-size: 25px;"><i><b>*Image is Clickable*</b></i></p>
                     <img src = "../img/gfl2/Menu.webp" style = "width:100%;" usemap = "#menuclick" id="menuimage">
                     <map name = "menuclick">
                         <area shape ="rect" coords = "164,64,460,290" href = "#CRE">
@@ -164,7 +168,7 @@
                     <h2 id = "CRE">Currently Running Event</h2>
                     <h2 id = "P/S">Profile/Setting</h2>
                     <h2 id = "BD">Background Display</h2>
-                    <h2 id = "FM">Background Display</h2>
+                    <h2 id = "FM">Friend Menu</h2>
                     <h2 id = "Battlepass_">Battlepass</h2>
                     <h2 id = "AllE">All Events (Limited + Login + etc)</h2>
                     <h2 id = "DLM">Daily Login Mission</h2>
@@ -175,7 +179,7 @@
                         <h3 id ="supmis">Supply Mission</h3>
                         <img src = "../img/gfl2/MaterialLv.PNG" style = "width:100%">
                         <p style="text-align:center">Here You'll be able to Farm<ol>
-                            <li>Combat Report (T-Doll Lv Up Material)</li>
+                            <li>Combat Report (T-Doll Lv Up Material)(T-Doll Afinity Level Up)</li>
                             <li>Analysis Blueprint (Weapon Lv Up Material)</li>
                             <li>
                                 Stock Bar (T-Doll Neural Helix Upgrade Material)(Grant T-Doll Bonus Stats and Passive Abilities)
@@ -184,7 +188,7 @@
                                 Attachment (Attach to Weapon for Extra Stat)(End Game Grind)
                             </li>
                             <li>
-                                Sardis Gold (Weapon Attachment Enchantment Currency)
+                                Sardis Gold (Weapon Attachment Enchantment Currency)(Limited to 2 Run per Day)(T-Doll Afinity Level Up)
                             </li>
                         </ol></p>
                     </div>
@@ -198,6 +202,70 @@
                         <h2 id = "DDWG">Dormitory/ Dispatch/ Weapon Gallery</h2>
                         <h3 id ="REFITMAIN">Main</h3>
                         <img src = "../img/gfl2/Public Area.PNG" style = "width:100%">
+                        <h4 id = "DORM">Dormitory</h4>
+                        <img src = "../img/gfl2/Dormitory.PNG" style = "width:100%">
+                        <p style = "text-align: center">You can give Gift to Your T-Dolls Raising their Affinity</p>
+                        <p style = "text-align: center">Other Feature Include:
+                            <ul>
+                                <li>Free Camera</li>
+                                <li>Changing their Poses</li>
+                                <li>Changing their Oufit (Paid Outfit Exclusive)</li>
+                                <li>Check their Voice Line and Backstory</li>
+                            </ul>
+                        </p>
+                        <h4 id = "DISPATCH">Dispatch Room</h4>
+                        <p style = "text-align:center"><b>Menu Buttons are Clickable</b></p>
+                        <img id="homedis" src="../img/gfl2/Dispatch.PNG" style="width:100%" usemap="#dispatchclick">
+                        <map name="dispatchclick">
+                            <area shape = "rect" coords = "1310,710,1639,775" onclick="switchImage('../img/gfl2/dispatchshop.PNG', '#disshop')">
+                            <area shape = "rect" coords = "966,710,1297,776" onclick = "switchImage('../img/gfl2/disincome.PNG', '#disincome')">
+                            <area shape = "rect" coords = "624,712,951,775" onclick = "switchImage('../img/gfl2/dispatchassignment.PNG', '#disassign')">
+                            <area shape = "rect" coords = "144,593,636,686" onclick = "switchImage('../img/gfl2/disearning.PNG', '#disearn')">
+                        </map>
+                        <map name = "disshop">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                        </map>
+                        <map name = "disincome">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "156,209,427,284" onclick = "switchImage('../img/gfl2/disprod.PNG', '#disprod')">
+                            <area shape = "rect" coords = "156,306,427,383" onclick = "switchImage('../img/gfl2/disconv.PNG', '#disconv')">
+                            <area shape = "rect" coords = "141,668,442,750" onclick = "switchImage('../img/gfl2/disgacha.PNG', '#disgacha')">
+                        </map>
+                        <map name = "disprod">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "156,112,427,192" onclick = "switchImage('../img/gfl2/disincome.PNG', '#disincome')">
+                            <area shape = "rect" coords = "156,306,427,383" onclick = "switchImage('../img/gfl2/disconv.PNG', '#disconv')">
+                            <area shape = "rect" coords = "141,668,442,750" onclick = "switchImage('../img/gfl2/disgacha.PNG', '#disgacha')">
+                        </map>
+                        <map name = "disconv">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "156,209,427,284" onclick = "switchImage('../img/gfl2/disprod.PNG', '#disprod')">
+                            <area shape = "rect" coords = "156,112,427,192" onclick = "switchImage('../img/gfl2/disincome.PNG', '#disincome')">
+                            <area shape = "rect" coords = "141,668,442,750" onclick = "switchImage('../img/gfl2/disgacha.PNG', '#disgacha')">
+                        </map>
+                        <map name = "disgacha">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/disincome.PNG', '#disincome')">
+                        </map>
+                        <map name = "disassign">
+                            <area shape = "rect" coords = "125,29,176,76" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                        </map>
+                        <map name = "disearn">
+                            <area shape = "rect" coords = "1302,114,1367,168" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "1367,0,1789,827" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "0,0,420,827" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "420,707,1367,707" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                            <area shape = "rect" coords = "420,0,1367,114" onclick = "switchImage('../img/gfl2/Dispatch.PNG', '#dispatchclick')">
+                        </map>
+                        <p style = "text-align: center">After Completeing the Doll Dispatch Assignment Requirment You'll be able to Dispatch Them</p>
+                        
+                        <p style = "text-align: center">Each Mission will give you 66 (Dispatch Records) (*Currency in the Upper-right)</p>
+                        <p style = "text-align: center">Completeing 25 Dispatch grants you 5 <b>Wishing Coins</b> which can be used in the Dispatch Income for Gachaing for a T-Doll and Weapons</p>
+                        <p style = "text-align: center"><b>*Important*</b></p>
+                        <p style = "text-align: center">Once per Week 300 of these Dispatch Records can be exchange for 1 Standard Pull Access Permission</p>
+                        <h4 id = "WEAPONGALL">Weapon Gallery</h4>
+                        <img src = "../img/gfl2/WeaponGallery.PNG" style = "width:100%">
+                        <p style = "text-align: center">You just display your Weapons Here, Nothing Else</p>
+                        
                     </div>
                     <div class = "botbord">
                         <h2 id = "Gacha">Gacha</h2>
@@ -344,6 +412,97 @@
 
             var areas = document.querySelectorAll('map[name="menuclick"] area');
 
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+
+            //Different image
+            image = document.getElementById('homedis');
+            imageWidth = image.width;
+            imageHeight = image.height;
+
+            scalex = imageWidth/image.naturalWidth;
+            scaley = imageHeight/image.naturalHeight;
+
+            areas = document.querySelectorAll('map[name="dispatchclick"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+
+            //disshop
+            areas = document.querySelectorAll('map[name="disshop"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            
+            //disincome
+            areas = document.querySelectorAll('map[name="disincome"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+
+            //disassign
+            areas = document.querySelectorAll('map[name="disassign"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+
+            //disearn
+            areas = document.querySelectorAll('map[name="disearn"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //disprod
+            areas = document.querySelectorAll('map[name="disprod"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //disconv
+            areas = document.querySelectorAll('map[name="disconv"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //disgacha
+            areas = document.querySelectorAll('map[name="disgacha"] area');
             areas.forEach(function(area) {
                 var coords = area.getAttribute('coords').split(",");
                 var scalescoord=  coords.map(function(coords, index) {
