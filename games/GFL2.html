@@ -114,22 +114,35 @@
                     <p style ="text-align: center; font-size: 25px;"><i><b>*Image is Clickable*</b></i></p>
                     <img src = "../img/gfl2/Menu_.PNG" style = "width:100%;" usemap = "#menuclick" id="menuimage">
                     <map name = "menuclick" class = "clickable">
-                        <area shape ="rect" coords = "164,64,460,290" href = "#CRE">
+                        <area shape ="rect" coords = "170,102,402,165" onclick = "switchImage('menuimage','../img/gfl2/Beginner.PNG','#beginmap')">
+                        <area shape ="rect" coords = "170,188,402,248" onclick = "switchImage('menuimage','../img/gfl2/Sjourners.PNG','#sjourmap')">
                         <area shape = "rect" coords = "162,707,254,744" onclick = "switchImage('menuimage','../img/gfl2/Profile1.PNG','#profile1')">
                         <area shape = "rect" coords = "266,705,347,740" onclick = "switchImage('menuimage','../img/gfl2/Background.PNG','#backgroundmap')">
                         <area shape = "rect" coords = "366,704,441,740" onclick = "switchImage('menuimage','../img/gfl2/Friend.PNG','#friendmap')">
-                        <area shape = "rect" coords = "1136,770,1232,853" href = "#Battlepass_">
-                        <area shape = "rect" coords = "1243,771,1345,852" href = "#AllE">
-                        <area shape = "rect" coords = "1345,773,1461,850" href = "#DLM">
+                        <area shape = "rect" coords = "1044,706,1133,779" onclick = "switchImage('menuimage','../img/gfl2/VoyageMain.PNG','#vmmap')">
+                        <area shape = "rect" coords = "1149,706,1228,779" onclick = "switchImage('menuimage','../img/gfl2/Eventmain.PNG','#event1map')">
+                        <area shape = "rect" coords = "1249,706,1335,779" onclick = "switchImage('menuimage','../img/gfl2/DailyMission.PNG','#dmmap')">
                         <area shape = "rect" coords = "1313,69,1650,157" onclick = "switchImage('menuimage','../img/gfl2/Main Story.PNG','#campignmap')">
-                        <area shape = "rect" coords = "1385,190,1628,267" href = "#LimitedE">
+                        <area shape = "rect" coords = "1385,190,1628,267" onclick = "switchImage('menuimage','../img/gfl2/Timelimited.PNG','#timelimitedmap')">
                         <area shape = "rect" coords = "1392,272,1628,337" onclick = "switchImage('menuimage','../img/gfl2/RefittingRoom.PNG','#refitmap')">
                         <area shape = "rect" coords = "1430,346,1628,421" onclick = "switchImage('menuimage','../img/gfl2/Public Area.PNG', '#publicmenu')">
                         <area shape = "rect" coords = "1426,443,1628,508" onclick = "switchImage('menuimage','../img/gfl2/EDollG1.PNG', '#gachamap')">
                         <area shape = "rect" coords = "1533,528,1628,590" onclick = "switchImage('menuimage','../img/gfl2/Shop1.PNG', '#mps')">
                         <area shape = "rect" coords = "382,544,572,677" href = "#StAM">
                     </map>
-                    <h2 id = "CRE">Currently Running Event</h2>
+                    <!-- Currently runnign event map-->
+                     <map name = "beginmap" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                     </map>
+                     <map name = "sjourmap" class = "clickable">
+                        <area shape = "rect" coords = "197,59,231,93" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "268,55,310,93" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                     </map>
+                     <map name = "sjour2map" class = "clickable">
+                        <area shape = "rect" coords = "197,59,231,93" onclick="switchImage('menuimage','../img/gfl2/Timelimited.PNG', '#timelimitedmap')">
+                        <area shape = "rect" coords = "268,55,310,93" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                     </map>
+                     <!-- Currenlty running event end -->
                     <!-- Profile Area map -->
                     <map name="profile1" class = "clickable">
                         <!-- Switches back to menu area -->
@@ -153,14 +166,59 @@
                     <map name = "friendmap" class = "clickable">
                         <area shape ="rect" coords = "1585,29,1640,82" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
                     </map>
-
-
-
-
-
-                    <h2 id = "Battlepass_">Battlepass</h2>
-                    <h2 id = "AllE">All Events (Limited + Login + etc)</h2>
-                    <h2 id = "DLM">Daily Login Mission</h2>
+                    <!-- Voyage Mapping -->
+                    <map name = "vmmap" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "909,22,1120,68" onclick="switchImage('menuimage', '../img/gfl2/VoyageMission.PNG','#vmmmap')">
+                    </map>
+                    <map name = "vmmmap" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "669,22,890,68" onclick="switchImage('menuimage', '../img/gfl2/VoyageMain.PNG','#vmmap')">
+                    </map>
+                    <!-- End of voyage mapping -->
+                    <!-- Event map -->
+                    <map name = "event1map" class = "clickable">
+                        <area shape ="rect" coords = "1585,29,1640,82" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape ="rect" coords = "172,111,329,156" onclick="switchImage('menuimage','../img/gfl2/Eventmain2.PNG', '#event2map')">
+                    </map>
+                    <map name = "event2map" class = "clickable">
+                        <area shape ="rect" coords = "1585,29,1640,82" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape ="rect" coords = "333,111,490,156" onclick="switchImage('menuimage','../img/gfl2/Eventmain.PNG', '#event1map')">
+                        <area shape ="rect" coords = "158,255,507,327" onclick="switchImage('menuimage','../img/gfl2/Eventmain3.PNG', '#event3map')">
+                    </map>
+                    <map name = "event3map" class = "clickable">
+                        <area shape ="rect" coords = "1585,29,1640,82" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape ="rect" coords = "333,111,490,156" onclick="switchImage('menuimage','../img/gfl2/Eventmain.PNG', '#event1map')">
+                        <area shape ="rect" coords = "158,175,507,245" onclick="switchImage('menuimage','../img/gfl2/Eventmain2.PNG', '#event2map')">
+                        <area shape ="circle" coords = "1497,584,67" onclick="switchImage('menuimage','../img/gfl2/Eventmain4.PNG', '#event4map')">
+                    </map>
+                    <map name = "event4map" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Eventmain3.PNG', '#event3map')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape ="rect" coords = "158,175,507,245" onclick="switchImage('menuimage','../img/gfl2/Eventmain2.PNG', '#event2map')">
+                        <area shape ="rect" coords = "1438,91,1643,134" onclick="switchImage('menuimage','../img/gfl2/Eventmain5.PNG', '#event5map')">
+                    </map>
+                    <map name = "event5map" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Eventmain3.PNG', '#event3map')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape ="rect" coords = "158,175,507,245" onclick="switchImage('menuimage','../img/gfl2/Eventmain2.PNG', '#event2map')">
+                        <area shape ="rect" coords = "1227,91,1433,134" onclick="switchImage('menuimage','../img/gfl2/Eventmain4.PNG', '#event4map')">
+                    </map>
+                    <!-- Event map end -->
+                    <!-- start of daily mission mapping -->
+                    <map name = "dmmap" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "1452,35,1660,79" onclick="switchImage('menuimage', '../img/gfl2/Achivement.PNG','#achmap')">
+                    </map>
+                    <map name = "achmap" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "1244,35,1448,79" onclick="switchImage('menuimage', '../img/gfl2/DailyMission.PNG','#dmmap')">
+                    </map>
+                     <!-- end of daily missing mapping -->
 
 
 
@@ -171,13 +229,20 @@
                          <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
                          <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
                         <area shape = "rect" coords = "1179,28,1383,72" onclick="switchImage('menuimage', '../img/gfl2/MaterialLv.PNG','#supplmap')">
-                        <!-- one more map -->
+                        <area shape = "rect" coords = "1387,28,1639,72" onclick="switchImage('menuimage', '../img/gfl2/CombatSimu.PNG','#combatsim')">
                     </map>
                     <map name = "supplmap" class = "clickable">
                         <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
                         <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
                        <area shape = "rect" coords = "971,28,1173,72" onclick="switchImage('menuimage', '../img/gfl2/Main Story.PNG','#campignmap')">
-                       <!-- one more map -->
+                       <area shape = "rect" coords = "1387,28,1639,72" onclick="switchImage('menuimage', '../img/gfl2/CombatSimu.PNG','#combatsim')">
+                       
+                    </map>
+                    <map name = "combatsim" class = "clickable">
+                        <area shape = "rect" coords = "122,24,179,76" onclick="switchImage('menuimage','../img/gfl2/Menu_.PNG', '#menuclick')">
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "1179,28,1383,72" onclick="switchImage('menuimage', '../img/gfl2/MaterialLv.PNG','#supplmap')">
+                        <area shape = "rect" coords = "971,28,1173,72" onclick="switchImage('menuimage', '../img/gfl2/Main Story.PNG','#campignmap')">
                     </map>
                  <!-- campign area map end -->
                   <!-- supply mission text -->
@@ -195,7 +260,14 @@
                             </li>
                         </ol></p>
                 <!-- end of suppl ymission text -->
-                    <h2 id = "LimitedE">Limited Event</h2>
+                    <!-- Start of time limited map -->
+                    <map name = "timelimitedmap" class ="clickable">
+                        <area shape = "rect" coords = "121,19,190,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')" >
+                        <area shape = "rect" coords = "200,19,266,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')">
+                        <area shape = "rect" coords = "160,365,389,758" onclick="switchImage('menuimage', '../img/gfl2/Sjourners.PNG','#sjour2map')">
+                        <!-- end of return -->
+                    </map>
+                    <!-- end of time limited map -->
                     <!-- Refitmap start-->
                     <map name = "refitmap" class ="clickable">
                         <area shape = "rect" coords = "121,19,190,86" onclick="switchImage('menuimage', '../img/gfl2/Menu_.PNG','#menuclick')" >
@@ -1122,6 +1194,146 @@
             });
             //mps4
             areas = document.querySelectorAll('map[name="mps4"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //vmmap
+            areas = document.querySelectorAll('map[name="vmmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //vmmmap
+            areas = document.querySelectorAll('map[name="vmmmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //beginmap
+            areas = document.querySelectorAll('map[name="beginmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //sjourmap
+            areas = document.querySelectorAll('map[name="sjourmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //sjour2map
+            areas = document.querySelectorAll('map[name="sjour2map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //dmmap
+            areas = document.querySelectorAll('map[name="dmmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //achmap
+            areas = document.querySelectorAll('map[name="achmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //combatsim
+            areas = document.querySelectorAll('map[name="achmap"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //event1map
+            areas = document.querySelectorAll('map[name="event1map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //event2map
+            areas = document.querySelectorAll('map[name="event2map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //event3map
+            areas = document.querySelectorAll('map[name="event3map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //event4map
+            areas = document.querySelectorAll('map[name="event4map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //event5map
+            areas = document.querySelectorAll('map[name="event5map"] area');
+            areas.forEach(function(area) {
+                var coords = area.getAttribute('coords').split(",");
+                var scalescoord=  coords.map(function(coords, index) {
+                    return index % 2 === 0 ? coords * scalex : coords * scaley;
+                });
+
+                area.setAttribute('coords', scalescoord.join(','))
+            });
+            //timelimitedmap
+            areas = document.querySelectorAll('map[name="timelimitedmap"] area');
             areas.forEach(function(area) {
                 var coords = area.getAttribute('coords').split(",");
                 var scalescoord=  coords.map(function(coords, index) {
