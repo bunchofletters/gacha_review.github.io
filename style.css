@@ -12,6 +12,27 @@ body{
     padding: 10px;
     text-align: center;
 }
+.background-img-setup {
+  object-fit: cover;
+  height:auto;
+  text-align: center;
+  color: #222121;
+  background-color: rgba(0, 0, 0, 1);
+}
+.white-text-border {
+    text-shadow: 
+    1px 1px 5px rgb(255, 255, 255),
+    -1px -1px 5px rgb(255, 255, 255),
+    1px -1px 5px rgb(255, 255, 255),
+    -1px 1px 5px rgb(255, 255, 255);  
+}
+.black-text-border {
+    text-shadow: 
+    1px 1px 5px rgb(0, 0, 0),
+    -1px -1px 5px rgb(0, 0, 0),
+    1px -1px 5px rgb(0, 0, 0),  
+    -1px 1px 5px rgb(0, 0, 0);  
+}
 .but{
     background-color: #717171;
     border: 1px solid #121212;
@@ -49,17 +70,22 @@ body{
   font-size: 20px;
   text-align: center;
 }
-.synop{
-  color: #EFEFED;
-  font-size: 19px;
-}
 .container{
-  position: relative; /* Establishes a reference point for absolute positioning */
-  width: 95vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(1 * 100vh);
+  padding: 5px;
+  justify-content: space-between;
   /* margin: 0 auto; */
-  padding: 10px;
+  /* padding: 10px; */
   /* overflow: hidden; */
+}
+.subcontainer{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
 }
 .fixed-button {
   position: absolute; /* Fixes the button 
